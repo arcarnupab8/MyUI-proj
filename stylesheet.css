@@ -1,6 +1,6 @@
-body {
-    background-color: white;
-}
+  body {
+      background-color: white;
+  }
   .container{
     align-items: center;
     display: flex;
@@ -22,17 +22,19 @@ body {
     padding: 2vh;
   }
   
+  /*card->FLIP*/
   .cardSelected .card_flipWrap{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  .card_flipWrap:hover .card_flipIn{
+  .card_flipWrap .card_flipIn.is-flipped{
     transform: rotateY(180deg);
   }
   .card_flipIn{
     transition: transform 0.6s;
     transform-style: preserve-3d;
   }
+
   .cardRed{
     background-color: Red;
     width: 100%;
@@ -41,6 +43,7 @@ body {
     border:  0.5vh solid black;
     border-radius: 0.9vh;
   }
+
   .containerRight{
     width: 45vh;
   }

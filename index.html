@@ -218,9 +218,14 @@
       </div>
       
       <script>
-        function changeColor(color) {
-            document.getElementById("cardRed").style.background = color;
-        }
+        var cards = document.querySelectorAll('.card_flipIn');
+
+        [...cards].forEach((card)=>{
+          card.addEventListener( 'click', function() {
+            card.classList.toggle('is-flipped');
+          });
+        });
+
         function SelectcardLEFT(){
           console.log("CardRed");
         }
