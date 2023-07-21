@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
   .container{
     align-items: center;
@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: 22vh;
     margin-bottom: 10%;
-    border:  0.5vh solid white;
+    border:  0.5vh solid black;
     border-radius: 0.9vh;
   }
   .containerRight{
@@ -38,7 +38,7 @@ body {
     width: 100%;
     height: 22vh;
     margin-bottom: 10%;
-    border:  0.5vh solid white;
+    border:  0.5vh solid black;
     border-radius: 0.9vh;
   }
   .containerMid{
@@ -49,11 +49,11 @@ body {
     width: 100%;
     padding-bottom: 5vh;
     justify-content: center;
+    font-weight: bold;
   }
-  .head{
-    
+  .head{ 
     font-size: 2vh;
-    color: white;
+    color: black;
     width: 100%;
   }
   .HeadLeft{
@@ -84,7 +84,7 @@ body {
   }
   
   .containerForm{
-    background-color: white;
+    background-color: gray;
     width: 90%;
     height: 45vh;
     border-radius: 1vh;
@@ -119,6 +119,7 @@ body {
     border-radius: 1vh;
     margin: 1vh;
     justify-content: center;
+    font-weight: 100;
   }
   .Choice a{
     background-color: white;
@@ -143,25 +144,27 @@ body {
     margin-top: 1.5vh;
   }
   .contentMidBottom .arrow{
-    background-color: white;
+    background-color: gray;
     border-radius: 1vh;
     width: 20%;
     height: 3vh;
-    margin: 1vh;
+    margin: 2%;
   }
   .contentMidBottom .entersend{
     background-color: gray;
     width: 40vh;
-    height: 4vh;
+    height: auto;
     border-radius: 1vh;
     display: flex;
   }
   .entersend .Input{
     margin: auto;
+    width: 60%;
   }
   
   .entersend .Button{
     margin: auto;
+    width: 20%;
   }
   
   .function{
@@ -169,7 +172,7 @@ body {
     margin-top: 1.5vh;
   }
   .function .selection{
-    background-color: white;
+    background-color: gray;
     margin: auto;
     width: 24vh;
     height: 4vh;
@@ -178,6 +181,7 @@ body {
   .contentMidHead{
     display: flex;
     justify-content: center;
+    font-weight: bold;
   }
   
   .HEAD{

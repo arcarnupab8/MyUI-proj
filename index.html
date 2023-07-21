@@ -12,23 +12,23 @@
     <div class="container">
         <div class="containerLeft">
           <div class='cardSelected'>
-            <div class="Col">
-                <div class='cardRed'>1</div>
-                <div class='cardRed'>2</div>
-                <div class='cardRed'>3</div>
-                <div class='cardRed'>4</div>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class='cardRed' id="cardRed">1</div>
+                <div class='cardRed' id="cardRed">2</div>
+                <div class='cardRed' id="cardRed">3</div>
+                <div class='cardRed' id="cardRed">4</div>
             </div>
-            <div class="Col">
-                <div class='cardRed'>1</div>
-                <div class='cardRed'>2</div>
-                <div class='cardRed'>3</div>
-                <div class='cardRed'>4</div>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class='cardRed' id="cardRed">1</div>
+                <div class='cardRed' id="cardRed">2</div>
+                <div class='cardRed' id="cardRed">3</div>
+                <div class='cardRed' id="cardRed">4</div>
             </div>
-            <div class="Col">
-                <div class='cardRed'>1</div>
-                <div class='cardRed'>2</div>
-                <div class='cardRed'>3</div>
-                <div class='cardRed'>4</div>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class='cardRed' id="cardRed">1</div>
+                <div class='cardRed' id="cardRed">2</div>
+                <div class='cardRed' id="cardRed">3</div>
+                <div class='cardRed' id="cardRed">4</div>
             </div>
           </div>
         </div>
@@ -92,26 +92,26 @@
               </div>
             </div>
             <div class="function">
-              <div class="selection">Restart</div>
-              <div class="selection">Conclusion</div>
+              <button class="selection" onclick="Restart()">Restart</button>
+              <button class="selection" onclick="Conclusion()">Conclusion</button>
             </div>
           </div>
         </div>
         <div class="containerRight">
           <div class='cardSelected'>
-            <div class="Col">
+            <div class="Col" onclick="SelectcardRIGHT()">
                 <div class='cardBlue'>1</div>
                 <div class='cardBlue'>2</div>
                 <div class='cardBlue'>3</div>
                 <div class='cardBlue'>4</div>
             </div>
-            <div class="Col">
+            <div class="Col" onclick="SelectcardRIGHT()">
                 <div class='cardBlue'>1</div>
                 <div class='cardBlue'>2</div>
                 <div class='cardBlue'>3</div>
                 <div class='cardBlue'>4</div>
             </div>
-            <div class="Col">
+            <div class="Col" onclick="SelectcardRIGHT()">
                 <div class='cardBlue'>1</div>
                 <div class='cardBlue'>2</div>
                 <div class='cardBlue'>3</div>
@@ -119,6 +119,25 @@
             </div>
           </div>
         </div>
-      </div>    
+      </div>
+      
+      <script>
+        function changeColor(color) {
+            document.getElementById("cardRed").style.background = color;
+        }
+        function SelectcardLEFT(){
+          console.log("CardRed");
+          changeColor('green');
+        }
+        function SelectcardRIGHT(){
+          console.log("CardBlue");
+        }
+        function Restart(){
+          console.log("Restart Button")
+        }
+        function Conclusion(){
+          console.log("Conclusion Button")
+        }
+      </script>
 </body>
 </html>
