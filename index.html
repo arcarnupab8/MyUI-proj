@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerLeft">
+          <div class='cardSelected'>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>1</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>2</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>3</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>4</div>
+                  </div>
+                </div>
+            </div>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>1</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>2</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>3</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>4</div>
+                  </div>
+                </div>
+            </div>
+            <div class="Col" onclick="SelectcardLEFT()">
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>1</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>2</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>3</div>
+                  </div>
+                </div>
+                <div class="card_flipWrap">
+                  <div class="card_flipIn">
+                    <div class='cardRed'>4</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerMid">
+          <div class="headContent">
+            <div class="HeadLeft">
+              <div class="headRed">RED</div>
+              <div class="head">TO DEVELOPER</div>
+            </div>
+            <div class="HeadMid">
+            </div>
+            <div class="HeadRight">
+              <div class="headBlue">BLUE</div>
+              <div class="head">TO DEVELOPER</div>
+            </div>
+          </div>
+          
+          <div class="contentMid">
+            <div class="contentMidHead">
+              <div class="HEAD">
+                <div class="headYellow">COUNCIL</div>
+                <div class="head">TO DEVELOPER</div>
+              </div>
+            </div>
+            <div class="Form">
+              <div class='containerForm'>
+                <div class="display">
+                  <div class="Question">
+                    <h1>คำถามที่ 1</h1>
+                    <p>จำนวนเงินที่ผ่ายที่แพ้สตอรี่จะต้องเสียให้ผู้ชนะ</p>
+                  </div>
+                </div>
+                <div class="Choice">
+                  <a>A</a>
+                  <div class="name">$10,000,000</div>
+                  <div class="space"></div>
+                  <div class="ref">TO DEVELOPER</div>
+                </div>
+                <div class="Choice">
+                  <a>B</a>
+                  <div class="name">$50,000,000</div>
+                  <div class="space"></div>
+                  <div class="ref">TO DEVELOPER</div>
+                </div>
+              </div>
+            </div>
+            <div class="contentMidBottom">
+              <div class="arrow" onclick="clickLEFT()">
+                <div class="arrowImg">
+                  <img src="./img/ArrowLeft.png" >
+                </div>
+              </div>
+              <form onsubmit="Send(event)" class="enterForm">
+                <div class="entersend">
+                  <div class="Input">
+                    <input placeholder="Aa" id="InputValue"></input>
+                  </div>
+                  <div class="Button">
+                    <button type="submit">SEND</button>
+                  </div>
+                </div>
+              </form>
+              <div class="arrow" onclick="clickRIGHT()">
+                <div class="arrowImg">
+                  <img src="./img/ArrowRight.png" >
+                </div>
+              </div>
+            </div>
+            <div class="function">
+              <button class="selection" onclick="Restart()">Restart</button>
+              <button class="selection" onclick="Conclusion()">Conclusion</button>
+            </div>
+          </div>
+        </div>
+        <div class="containerRight">
+          <div class='cardSelected'>
+            <div class="Col" onclick="SelectcardRIGHT()">
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>1</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>2</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>3</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>4</div>
+                </div>
+              </div>
+            </div>
+            <div class="Col" onclick="SelectcardRIGHT()">
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>1</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>2</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>3</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>4</div>
+                </div>
+              </div>
+            </div>
+            <div class="Col" onclick="SelectcardRIGHT()">
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>1</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>2</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>3</div>
+                </div>
+              </div>
+              <div class="card_flipWrap">
+                <div class="card_flipIn">
+                  <div class='cardBlue'>4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        var cards = document.querySelectorAll('.card_flipIn');
+
+        [...cards].forEach((card)=>{
+          card.addEventListener( 'click', function() {
+            card.classList.toggle('is-flipped');
+          });
+        });
+
+        function SelectcardLEFT(){
+          console.log("CardRed");
+        }
+        function SelectcardRIGHT(){
+          console.log("CardBlue");
+        }
+        function Restart(){
+          console.log("Restart Button")
+          var cards = document.querySelectorAll('.card_flipIn');
+
+          [...cards].forEach((card)=>{
+              card.classList.remove('is-flipped');
+            });
+        }
+        function Conclusion(){
+          console.log("Conclusion Button")
+        }
+        function Send(event){
+          event.preventDefault();
+          var Values = document.getElementById("InputValue");
+          console.log(Values.value);
+        }
+        function clickLEFT(){
+          console.log("<-LEFT")
+        }
+        function clickRIGHT(){
+          console.log("RIGHT->")
+        }
+      </script>
+</body>
+</html>
